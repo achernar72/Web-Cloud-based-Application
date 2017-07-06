@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RockPaperScissor</title>
+</head>
+<body>
+
+<p>Click the button to start game.</p>
+
+<button onclick="myFunction()">computerChoice</button>
+
+<button onclick="myFunction()">userChoice</button>
+
+<p id="demo"></p>
+
+<script>
+    function myFunction() {
+        Math.random();
+        compare(userChoice, computerChoice);
+
+
+        if (Math.random < 0.3) {
+            document.getElementById("demo").innerHTML == "Rock"
+        }
+
+
+        else if (0.3 < Math.random > 0.7) {
+            document.getElementById("demo").innerHTML == "paper"
+        }
+        else {
+            document.getElementById("demo").innerHTML == "scissor"
+        }
+
+    }
+    var compare = function(choice1, choice2)
+    {
+        if(choice1 === choice2)
+        {
+            return "The result is a tie!";
+        }
+        else if(choice1 === "rock")
+        {
+            if(choice2 === "scissors")
+            {
+                return "rock wins";
+            }
+            else
+            {
+                return "paper wins";
+            }
+        }
+        else if(choice1 === "paper")
+        {
+            if(choice2 === "rock")
+            {
+                return "paper wins";
+            }
+            else
+            {
+                return "scissors wins";
+            }
+        }
+    }
+    }
+</script>
+
+</body>
+</html>
